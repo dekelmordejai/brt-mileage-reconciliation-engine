@@ -1,0 +1,15 @@
+services:
+  motor:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      MOTOR_DB: /app/private_data/motor.sqlite3
+      MOTOR_HOSTS: localhost,127.0.0.1
+    volumes:
+      - motor-data:/app/private_data
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  motor-data:

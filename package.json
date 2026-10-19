@@ -1,0 +1,6 @@
+{
+  "name":"brt-mileage-browser-qa",
+  "private":true,
+  "scripts":{"test:e2e":"node tests/browser-e2e.cjs"},
+  "devDependencies":{"playwright":"1.62.1"}
+}

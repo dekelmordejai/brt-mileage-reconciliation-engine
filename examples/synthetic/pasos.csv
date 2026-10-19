@@ -1,0 +1,4 @@
+service_date,vehicle_id,route,start_time,end_time,start_day_offset,end_day_offset,km,jornada,synthetic
+2026-09-28,SYN-001,SYN-ROUTE-A,23:50,00:20,0,1,10.25,SYN-DUTY-01,true
+2026-09-28,SYN-002,SYN-ROUTE-B,08:00,08:30,0,0,8.00,-,true
+2026-09-28,SYN-003,SYN-CIRCUIT-A,10:00,10:20,0,0,5.00,SYN-DUTY-03,true

@@ -1,0 +1,71 @@
+# Entorno y secretos
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+*.pem
+*.key
+*service-account*.json
+*credentials*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Datos operativos y resultados
+instance/*
+!instance/.gitkeep
+data/runs/*
+!data/runs/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+*.pkl
+*.pickle
+*.csv
+*.xlsx
+*.xls
+*.html
+!templates/*.html
+!app/static/*.html
+private_data/
+*.sqlite3-wal
+*.sqlite3-shm
+test-results/
+playwright-report/
+node_modules/
+!fixtures/*.json
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs y temporales
+*.log
+*.tmp
+*.bak
+
+# Engine packaging and restricted institutional evidence
+build/
+dist/
+*.egg-info/
+data/
+outputs/
+work/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.parquet
+*.pdf
+*.zip
+# Only explicitly synthetic CSV fixtures may be tracked
+!examples/synthetic/*.csv
+!tests/fixtures/synthetic/*.csv

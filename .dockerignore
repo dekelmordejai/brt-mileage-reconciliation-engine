@@ -1,0 +1,15 @@
+.git
+.venv
+private_data
+work
+outputs
+node_modules
+test-results
+dist
+build
+**/__pycache__
+.env*
+*.sqlite*
+*.zip
+*.csv
+*.xlsx

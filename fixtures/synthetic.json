@@ -1,0 +1,33 @@
+{
+  "RV": [
+    {"date":"2026-09-28","route":"L01A01-1","journey":"J-DEMO-01","trip":"1","planned_company":"EMPRESA-A","assigned_vehicle":"DEMO-999","vehicle":"DEMO-001","planned_departure":"06:00","departure":"06:01","arrival":"06:30","planned_km":"10","physical_km":"10","status":"Cancelada"},
+    {"date":"2026-09-28","route":"L01A21-1","journey":"J-DEMO-01","trip":"2","planned_company":"EMPRESA-A","vehicle":"DEMO-002","planned_departure":"07:00","departure":"07:00","arrival":"07:20","planned_km":"5","physical_km":"5","status":"Planeada y realizada"},
+    {"date":"2026-09-28","route":"C01A44-1","journey":"J-DEMO-01","trip":"3","planned_company":"EMPRESA-A","vehicle":"DEMO-001","planned_departure":"08:00","departure":"08:00","arrival":"08:20","planned_km":"6","physical_km":"6","status":"Extra"},
+    {"date":"2026-09-29","route":"L01A01-2","journey":"J-DEMO-02","trip":"1","planned_company":"EMPRESA-A","vehicle":"DEMO-003","planned_departure":"10:00","departure":"10:00","arrival":"10:30","planned_km":"9","physical_km":"9","status":"Realizada"}
+  ],
+  "PASOS": [
+    {"date":"2026-09-28","journey":"J-DEMO-01","vehicle":"DEMO-001","trip":"1","physical_km":"10","Terminal A":"06:01","Estación B":"06:15","Terminal C":"06:30"},
+    {"date":"2026-09-28","journey":"J-DEMO-01","vehicle":"DEMO-002","trip":"2","physical_km":"5","Terminal C":"07:00","Depósito D":"07:20"},
+    {"date":"2026-09-28","journey":"J-DEMO-01","vehicle":"DEMO-001","trip":"3","physical_km":"6","Estación B":"08:00","Terminal A":"08:20"},
+    {"date":"2026-09-29","journey":"J-DEMO-02","vehicle":"DEMO-003","trip":"1","physical_km":"9","Terminal A":"10:00","Terminal C":"10:30"}
+  ],
+  "FLOTA": [
+    {"vehicle":"DEMO-001","company":"EMPRESA-A","vehicle_type":"Articulado"},
+    {"vehicle":"DEMO-002","company":"EMPRESA-A","vehicle_type":"Biarticulado"},
+    {"vehicle":"DEMO-003","company":"EMPRESA-B","vehicle_type":"Articulado"}
+  ],
+  "TARIFAS": [
+    {"line":"L1","company":"EMPRESA-A","vehicle_type":"Articulado","valid_from":"2026-01-01","valid_to":"2026-12-31","rate":"10.25","reference":"SINTETICA-01-SIN-VALIDEZ"},
+    {"line":"L1","company":"EMPRESA-A","vehicle_type":"Biarticulado","valid_from":"2026-01-01","valid_to":"2026-12-31","rate":"15.50","reference":"SINTETICA-02-SIN-VALIDEZ"},
+    {"line":"L1","company":"EMPRESA-B","vehicle_type":"Articulado","valid_from":"2026-01-01","valid_to":"2026-12-31","rate":"10.50","reference":"SINTETICA-03-SIN-VALIDEZ"}
+  ],
+  "APOYOS": [
+    {"date":"2026-09-28","time":"07:00","end_time":"07:20","vehicle":"DEMO-002","journey":"J-DEMO-01","company":"EMPRESA-A","line":"L1","km2":"0","reason":"Sustitución misma empresa"}
+  ],
+  "DESINC": [
+    {"date":"2026-09-28","time":"08:05","end_time":"08:10","vehicle":"DEMO-001","journey":"J-DEMO-01","line":"L1","reason":"Reintegración pendiente de CCO"}
+  ],
+  "CIRCUITOS": [
+    {"date":"2026-09-28","route":"C01A44-1","journey":"J-DEMO-01","vehicle":"DEMO-001","departure":"08:00","arrival":"08:20","physical_km":"6"}
+  ]
+}

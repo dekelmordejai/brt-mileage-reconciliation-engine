@@ -1,0 +1,8 @@
+include README.md README.es.md LICENSE.md SECURITY.md CONTRIBUTING.md
+recursive-include examples/synthetic *.csv
+recursive-include docs *.md *.png
+recursive-include app *.py *.json *.html *.css *.js
+recursive-include fixtures *.json
+recursive-include scripts *.py *.ps1
+recursive-include tests *.py *.cjs
+include requirements*.txt requirements-dev.lock Dockerfile docker-compose.yml package.json package-lock.json
